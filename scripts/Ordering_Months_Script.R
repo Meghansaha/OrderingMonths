@@ -26,6 +26,9 @@ Patientgraph
 # We could fix this by manually setting the factors. To do this, we'd need to know the months we have in the dataset. This is done with the "unique" function===
 unique(Patients$Month)
 
+#It also helps to confirm the varibale type that you're dealing with. We want factors, not characters.#
+class(Patients$Month)
+
 #We can see the order is (feb, may, aug, sept, dec).#
 #We can do this manually. Doing it this way is cumbersome though because the spelling has to be exact, (capitalization, spelling, etc.)#
 
